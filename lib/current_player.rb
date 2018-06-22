@@ -1,12 +1,12 @@
 def turn_count(board)
-  move = []
-  
-  board.each do |index|
-    if index == "X" || index == "O"
-     move.push(1)
-    end
+move = []
+
+board.each do  |index|
+  if index == "X" || index == "O"
+    move.push(1)
   end
-move.length.to_i
+end 
+move.length
 end
 
 def current_player(board)
